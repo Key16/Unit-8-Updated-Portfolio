@@ -2611,6 +2611,12 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+#other-projects-section a{
+  color: black;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+
+}
 .valign-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6047,7 +6053,7 @@ body.keyboard-focused .dropdown-content li:focus {
 .materialboxed {
   display: block;
   cursor: -webkit-zoom-in;
-  cursor: zoom-in;
+  cursor:pointer;
   position: relative;
   -webkit-transition: opacity .4s;
   transition: opacity .4s;

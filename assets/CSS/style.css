@@ -109,6 +109,11 @@ nav a:hover{
     flex-wrap: wrap;
 }
 
+#other-projects-section .title {
+    text-align: center;
+    color:navy;
+}
+
 .box{
     flex: 0 1 100%;
     position: relative;
