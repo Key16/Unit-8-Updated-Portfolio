@@ -2,7 +2,12 @@
 
 # Description
 
+![Here is the snapshot of the webpage.](./assets/Images/portfolio.png)
 
+
+To view the code on my github go to this [ link ](https://github.com/Key16/Unit-8-Updated-Portfolio/ )
+
+Or view it live [ here ](https://key16.github.io/Unit-8-Updated-Portfolio/ )
 
 This portfolio has been updated to include a new CSS library, Materialize. The look of the projects layout has changed slightly, and a parallax div has been added in as well. A mobile friendly side bar has also been added in.
 
