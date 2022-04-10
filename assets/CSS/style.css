@@ -1,0 +1,363 @@
+:root{
+    --borders:0.2rem solid rgba(153, 211, 194, 0.486);
+    --ivory:rgba(213, 242, 255, 0.466);
+    --text:rgb(24, 121, 167);
+    --box-colours: rgb(255, 236, 248);
+}
+/* 
+:root{
+    --borders:0.2rem solid rgba(45, 128, 206, 0.486);
+    --ivory:rgba(249, 253, 255, 0.158);
+    --text:rgb(123, 213, 255);
+} */
+
+body{
+    /* background-color: black; */
+    /* background-color: var(--ivory); */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  font-size: 1.75rem;
+  line-height: 1.5;
+  /* color:var(--text); */
+}
+
+.top{
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/9757d496-239b-46c5-baea-6873cbfe9b3d/df11eqg-d9be491f-a78e-48c8-9899-c03e217c6c14.jpg/v1/fill/w_1192,h_670,q_70,strp/behind_the_blister_by_joeyjazz_df11eqg-pre.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+
+}
+html {
+    /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+    font-size: 62.5%;
+    scroll-behavior: smooth !important;
+  }
+
+h1 {
+/* 4rem = 40px (4 * 10px) */
+font-size: 4rem;
+}
+
+/* h2 {
+font-size: 3.5rem;
+}
+
+h3 {
+font-size: 3rem;
+}
+
+h4 {
+font-size: 2.5rem;
+}
+
+h5 {
+font-size: 2rem;
+}
+
+h6 {
+font-size: 1.5rem;
+} */
+
+p {
+margin-bottom: 1rem;
+}
+
+/* nav bar */
+nav {
+    /* margin: 1rem 0; */
+    float:none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';    font-size: 2rem;
+    /* position: fixed; */
+    /* padding:0 0.5rem; */
+}
+/* 
+nav ul {
+    width:100%;
+    margin:0;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0.25rem 0;
+    width:32%;
+    text-align: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    display:block;
+    transition: all 0.3s ease-out;
+    color:var(--text)
+} */
+/* 
+nav a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius:0.5rem;
+    color:rgb(51, 147, 192);
+    box-shadow: 0.8rem 0.8rem 0.3rem 0.1rem rgba(164, 186, 206, 0.664);
+} */
+
+/* section with intro text and top project */
+.intro-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box{
+    flex: 0 1 100%;
+    position: relative;
+    width:100%;
+}
+
+.intro-container .intro-card{
+    /* background: var(--ivory); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}.tracking-in-expand{-webkit-animation:tracking-in-expand 1.5s cubic-bezier(.55,.055,.675,.19) both;animation:tracking-in-expand 1.5s cubic-bezier(.55,.055,.675,.19) both}
+.tracking-in-expand{-webkit-animation:tracking-in-expand 1.5s cubic-bezier(.55,.055,.675,.19) both;animation:tracking-in-expand 1.5s cubic-bezier(.55,.055,.675,.19) both}
+
+@-webkit-keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+.swing-in-top-fwd{-webkit-animation:swing-in-top-fwd 2s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-fwd 5s cubic-bezier(.175,.885,.32,1.275) both}@-webkit-keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+.intro-card h1{
+    margin:2rem;
+    text-align: center;
+    padding:2rem;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.intro-card img{
+    width: 15rem;
+    height:15rem;
+    border: solid 2px rgba(211, 98, 154, 0.719);
+    border-radius: 2rem;
+    /* background-color: var(--ivory); */
+    padding:1rem;
+    margin:2rem;
+}
+
+/* main project card*/
+
+.project-card{
+    display:relative;
+    /* background-color: var(--ivory); */
+}
+
+.project-card img{
+    height:40rem;
+    width:100%;
+    border-radius:4rem;
+    padding: 2rem;
+    background-size: cover;
+}
+
+
+.project-card a{
+    text-decoration: none;
+}
+
+
+.project-card h3:hover {
+    transition: all 0.5s ease-in-out;
+    color:white;
+}
+
+.project-card h3{
+    position:absolute;
+    background-color: rgba(133, 177, 228, 0.473);
+    width:40%;
+    text-align: center;
+    top: 2rem;
+    left:2rem;
+    margin:2rem;
+    border: var(--borders);
+    border-radius: 1rem;
+    /* color:var(--text); */
+}
+
+
+/* about me  */
+
+
+.about-me{
+    padding:1.5rem;
+    color:white;
+    /* max-height:400px; */
+    /* margin:1rem 0; */
+    
+}
+
+
+
+
+/* project cards */
+
+.other-projects{
+    padding:1.5rem;
+    /* background-color: var(--ivory) */
+    
+}
+
+.project-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%
+}
+
+.project-small-card{
+    width:100%;
+    padding:2rem;
+    border-radius: 2rem;
+    margin:2rem 0;
+    text-align: center;
+    box-shadow: 0.8rem 0.8rem 0.3rem 0.1rem rgba(206, 164, 185, 0.664);
+    background-color: var(--box-colours);
+    transition: all 0.5s ease-in-out;
+}
+
+.project-small-card img{
+    /* height: 25rem;
+    width:25rem;
+    border-radius: 50%;
+    background-position:left; */
+    
+}
+
+
+.project-small-card h4 {
+    margin:1rem 0;
+}
+
+
+/* footer */
+
+footer{
+    padding:2rem 1rem;
+
+}
+
+footer h5{
+    color:white;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1;
+}
+
+footer ul{
+    
+    text-align: center;
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+}
+
+footer ul li {
+    align-content: center;
+}
+
+footer ul li img{
+    width:3rem;
+}
+/* media queries */
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+    
+    nav ul {
+        display:flex;
+        width:35%;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    nav a {
+        float:none;
+        /* margin: 0.25rem 0; */
+        text-align: center;
+        justify-content: flex-start;
+    }
+
+
+.intro-container .intro-card{
+    /* background: var(--ivory); */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-content: center;
+}
+  
+    .box{
+        flex: 0 0 50%;
+        transition: flex-basis 0.2s ;
+        height:50rem;
+    }
+
+    .project-card img{
+        /* height:50rem; */
+    }
+    
+
+    .other-projects{
+        padding:1.5rem;
+        /* background-color: var(--ivory); */
+    }
+    
+    .project-container{
+        justify-content: space-around;
+    }
+
+    .project-small-card{
+        /* height:48rem; */
+        align-content: center;
+        margin:2rem;
+        flex:1 1 30%;
+        box-shadow: none;
+        background-color: none;
+    }
+    
+    
+    .project-small-card:hover{
+        box-shadow: 0.8rem 0.8rem 0.3rem 0.1rem rgba(206, 164, 187, 0.664);
+        background-color: var(--box-colours);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .project-small-card img{
+        width: 30rem;
+        height: 30rem;
+    }
+
+    
+
+    footer {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:100%;
+    }
+
+   
+    footer ul {
+        justify-content: space-evenly;
+        width:20rem;
+    }
+
+    footer ul li {
+        width:5%;
+        text-align: center;
+    }
